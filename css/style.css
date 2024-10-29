@@ -1,0 +1,366 @@
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --tertiary-color: #fff;
+    --quaternary-color: #ced4da;
+    --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
+    --transition-speed: 0.3s;
+}
+
+body {
+    margin: 0;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    /* background-color: var(--tertiary-color); */
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5;
+
+}
+
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.gray-filter {
+    filter: grayscale(100%);
+}
+
+#teste {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+#teste1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#perfil {
+    vertical-align: middle;
+    border-style: none;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#contact-form {
+    padding: 100px;
+    background-color: var(--tertiary-color);
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+/* //formulario */
+.form-contact {
+    padding: 2rem;
+    background-color: var(--tertiary-color);
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+.form-contact label {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.form-contact input,
+.form-contact textarea {
+    border: 1px solid var(--quaternary-color);
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    font-family: 'Montserrat', sans-serif;
+    transition: all var(--transition-speed) ease-in-out;
+}
+
+.form-contact input:focus,
+.form-contact textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--primary-color);
+}
+
+.form-contact input[type="submit"] {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    font-family: 'Montserrat', sans-serif;
+    transition: all var(--transition-speed) ease-in-out;
+}
+
+.form-contact input[type="submit"]:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.gray-filter:hover {
+    filter: none;
+}
+
+.card {
+    background-color: var(--tertiary-color);
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    transition: transform var(--transition-speed) ease-in-out, box-shadow var(--transition-speed) ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.card-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.card-text {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Centralize o carrossel e defina o tamanho */
+.carousel {
+    max-width: 50%;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+}
+
+/* Estilize as imagens com uma transição suave */
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    filter: grayscale(20%);
+    transition: filter var(--transition-speed) ease;
+}
+
+.carousel-item img:hover {
+    filter: grayscale(0%);
+}
+
+
+/* Estilização da seção de depoimentos */
+.testimonial-section {
+    text-align: center;
+    color: #333;
+}
+
+.testimonial-section h2 {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
+/* Container do depoimento */
+.testimonial-container {
+    max-width: 600px;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Texto do depoimento */
+.testimonial-text {
+    font-size: 1.1rem;
+    color: #666;
+    font-style: italic;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+/* Estilização do autor */
+.author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.author-photo {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 0.5rem;
+}
+
+.author-name {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Estilização dos pontos de navegação */
+.dots {
+    margin-top: 1rem;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #007bff;
+}
+
+.center-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.testimonial-section {
+    text-align: center;
+    color: #333;
+}
+
+.testimonial-container {
+    max-width: 600px;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* portifolio */
+
+/* Título da seção de portfólio */
+.portfolio-title {
+    color: #3a82f7;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Botões de filtro */
+.portfolio-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.portfolio-button {
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 1px solid var(--quaternary-color);
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color var(--transition-speed);
+}
+
+.portfolio-button.active {
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    border: none;
+}
+
+/* Estilização da galeria de imagens */
+.portfolio-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.portfolio-gallery img {
+    max-width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Estilos das colunas de imagem */
+.portfolio-col {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.portfolio-col img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+}
+
+.team-container {
+    text-align: center;
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+    /* Centraliza o contêiner na página */
+}
+
+
+/* meu time nosso time */
+.team-container {
+    text-align: center;
+    width: 80%;
+    max-width: 900px;
+}
+
+.team-container h1 {
+    font-size: 2em;
+    color: #007bff;
+}
+
+.team-container p {
+    color: #555;
+    font-size: 1em;
+    margin-bottom: 2em;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+    /* Centraliza os itens na grade */
+}
+
+.team-member {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.team-member h3 {
+    font-size: 1em;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+.team-member p {
+    font-size: 0.9em;
+    color: #888;
+    margin: 0;
+}

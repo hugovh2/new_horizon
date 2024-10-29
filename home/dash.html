@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="../css/nova.css">
+    <link rel="stylesheet" href="../js/script.js">
+    <script href="../js/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Co.</div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="index.html">Portfolio</a></li>
+                <li><a href="dash.html">Serviços</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content" id="hero-content">
+            <h1>Bem Vindo</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio soluta eius error.</p>
+            <a href="#contact" class="cta-button" onclick="scrollToContact()">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>Entre em contato para mais informações.</p>
+    </section>
+
+
+
+
+    <section class="features-section">
+        <h2>Our Features</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus minima neque tempora reiciendis.</p>
+        
+        <div class="feature-content">
+            <div class="feature-image">
+                <img src="https://via.placeholder.com/400" alt="Feature Image" id="carousel-image">
+                <div class="carousel-controls">
+                    <button onclick="prevImage()">←</button>
+                    <button onclick="nextImage()">→</button>
+                </div>
+            </div>
+            <div class="feature-text">
+                <h3>Take your business online</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Est qui eos quasi ratione nostrum excepturi id recusandae fugit omnis ullam pariatur itaque nisi voluptas impedit.</p>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Array de URLs de imagem para o carrossel
+        const images = [
+            '../images/dormindo2.jpg',
+            '../images/dormindo1.jpg',
+            '../images/mulher.jpg',
+        ];
+
+        let currentImageIndex = 0;
+        const heroSection = document.querySelector('.hero');
+        const heroContent = document.querySelector('#hero-content');
+
+        // Troca automática de imagem de fundo a cada 5 segundos
+        function changeBackgroundImage() {
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            heroSection.style.backgroundImage = `url('${images[currentImageIndex]}')`;
+        }
+
+        // Função para rolar suavemente até a seção de contato
+        function scrollToContact() {
+            const contactSection = document.querySelector('#contact');
+            contactSection.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Animação de entrada para o conteúdo ao carregar
+        window.addEventListener('load', () => {
+            heroContent.style.opacity = '1';
+            heroContent.style.transform = 'translateY(0)';
+            setInterval(changeBackgroundImage, 5000);
+        });
+    </script>
+
+    
+</body>
+
+</html>
+
+
+
+<!-- // Array de URLs de imagem para o carrossel
+const images = [
+    'https://via.placeholder.com/400?text=Image+1',
+    'https://via.placeholder.com/400?text=Image+2',
+    'https://via.placeholder.com/400?text=Image+3'
+];
+
+let currentImageIndex = 0;
+const carouselImage = document.getElementById('carousel-image');
+
+// Função para mostrar a imagem anterior
+function prevImage() {
+    currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+    updateImage();
+}
+
+// Função para mostrar a próxima imagem
+function nextImage() {
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+    updateImage();
+}
+
+// Atualizar a imagem no carrossel
+function updateImage() {
+    carouselImage.src = images[currentImageIndex];
+} -->
