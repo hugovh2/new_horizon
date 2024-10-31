@@ -9,10 +9,11 @@
 
 body {
     margin: 0;
-    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     /* background-color: var(--tertiary-color); */
-    font-family: 'Roboto', sans-serif;
-    color: #f0f2f5;
+    /* font-family: 'Roboto', sans-serif; */
+    background-color: #f0f2f5;
+    color: #333;
 
 }
 /* inicio navbar */
@@ -177,6 +178,12 @@ body {
     border-color: var(--secondary-color);
 }
 
+
+
+
+
+
+
 .gray-filter:hover {
     filter: none;
 }
@@ -210,6 +217,8 @@ body {
 .card-text {
     font-family: 'Montserrat', sans-serif;
 }
+
+
 
 /* Centralize o carrossel e defina o tamanho */
 .carousel {
@@ -445,4 +454,120 @@ body {
     margin: 0;
 }
 
+:root {
+    --primary-color: #007bff;
+    --text-color: #ffffff;
+    --card-hover: rgba(0, 123, 255, 0.3);
+    --transition-speed: 0.3s;
+}
 
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+.portfolio-title {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 2em;
+    margin: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    transition: transform var(--transition-speed);
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.1);
+}
+
+.card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--card-hover);
+    padding: 20px;
+    color: var(--text-color);
+    opacity: 0;
+    transition: opacity var(--transition-speed);
+}
+
+.card:hover .card-overlay {
+    opacity: 1;
+}
+
+.card-title, .card-text {
+    margin: 0;
+    text-align: center;
+}
+
+/* //////////////////////////////////// Inicio do novo  */
+
+.card-container {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.card-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.card-overlay .arrow {
+    font-size: 24px;
+    font-weight: normal;
+}
