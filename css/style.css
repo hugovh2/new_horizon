@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #007bff;
+    --primary-color: #333;
     --secondary-color: #6c757d;
     --tertiary-color: #fff;
     --quaternary-color: #ced4da;
@@ -17,87 +17,89 @@ body {
 
 }
 /* inicio navbar */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
 .navbar {
-    background-image: linear-gradient(to bottom, #333, #222);
-    padding: 1rem 2rem;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15), 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 25px 25px;
+    background-color: #f7f6f4;
+    /* border-bottom: 1px solid #ddd; */
+    border-bottom: 1px solid #111111;
 }
 
-.navbar-brand {
+/* Logo */
+.navbar-logo {
     display: flex;
     align-items: center;
-    gap: 10px;
-    font-size: 1.5rem;
+}
+
+.navbar-logo img {
+    height: 24px;
+    margin-right: 5px;
+}
+
+.navbar-logo span {
+    font-size: 20px;
     font-weight: bold;
-    color: #fff;
-    text-decoration: none;
-    background-image: linear-gradient(to right, #007bff, #0047ab);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #333;
 }
 
-.navbar-brand img {
-    height: 50px;
-    width: auto;
-    border-radius: 50%;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.navbar-brand img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
-}
-
-.navbar-nav {
+/* Links */
+.navbar-links {
     display: flex;
-    gap: 20px;
     align-items: center;
+    gap: 15px;
 }
 
-.navbar-nav .nav-item {
-    position: relative;
+.navbar-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
 }
 
-.navbar-nav .nav-item::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-image: linear-gradient(to right, #007bff, #0047ab);
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
+.navbar-links a:hover {
+    color: #000;
 }
 
-.navbar-nav .nav-item:hover::after {
-    transform: scaleX(1);
+/* Botões */
+.navbar-buttons {
+    display: flex;
+    gap: 10px;
 }
 
-.navbar-nav .nav-link {
-    color: #fff !important;
-    transition: color 0.3s ease;
+.navbar-buttons .button {
+    padding: 5px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.navbar-nav .nav-link:hover {
-    color: #007bff !important;
-}
-
-.navbar-toggler {
-    border: none;
+.navbar-buttons .button-download {
+    color: #333;
+    border: 1px solid #333;
     background-color: transparent;
-    padding: 0;
-    background-image: linear-gradient(to right, #007bff, #0047ab);
-    background-clip: padding-box;
-    border-radius: 0.25rem;
 }
 
-.navbar-toggler:focus {
-    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+.navbar-buttons .button-download:hover {
+    background-color: #e0e0e0;
+}
+
+.navbar-buttons .button-start {
+    color: #fff;
+    background-color: #333;
+    border: 1px solid #333;
+}
+
+.navbar-buttons .button-start:hover {
+    background-color: #333;
+    border-color: #333;
 }
 /* fim navbar */
 
@@ -178,48 +180,6 @@ body {
     border-color: var(--secondary-color);
 }
 
-
-
-
-
-
-
-.gray-filter:hover {
-    filter: none;
-}
-
-.card {
-    background-color: var(--tertiary-color);
-    border-radius: 10px;
-    box-shadow: var(--box-shadow);
-    transition: transform var(--transition-speed) ease-in-out, box-shadow var(--transition-speed) ease-in-out;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.card-img-top {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-.card-body {
-    padding: 1rem;
-}
-
-.card-title {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-}
-
-.card-text {
-    font-family: 'Montserrat', sans-serif;
-}
-
-
-
 /* Centralize o carrossel e defina o tamanho */
 .carousel {
     max-width: 50%;
@@ -250,7 +210,7 @@ body {
 
 .testimonial-section h2 {
     font-size: 2rem;
-    color: #007bff;
+    color: #333;
     margin-bottom: 1rem;
 }
 
@@ -308,7 +268,7 @@ body {
 }
 
 .dot.active {
-    background-color: #007bff;
+    background-color: #333;
 }
 
 .center-wrapper {
@@ -335,7 +295,7 @@ body {
 
 /* Título da seção de portfólio */
 .portfolio-title {
-    color: #3a82f7;
+    color: #333;
     font-size: 2em;
     margin-bottom: 20px;
     text-align: center;
@@ -411,7 +371,7 @@ body {
 
 .team-container h1 {
     font-size: 2em;
-    color: #007bff;
+    color: #333;
 }
 
 .team-container p {
@@ -455,7 +415,7 @@ body {
 }
 
 :root {
-    --primary-color: #007bff;
+    --primary-color: #333;
     --text-color: #ffffff;
     --card-hover: rgba(0, 123, 255, 0.3);
     --transition-speed: 0.3s;
@@ -529,7 +489,17 @@ body {
 
 .card-container {
     display: flex;
-    gap: 20px;
+    gap: 40px;
+}
+
+#miniCards.card {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
 }
 
 .card {
@@ -571,3 +541,31 @@ body {
     font-size: 24px;
     font-weight: normal;
 }
+
+.footer {
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+}
+
+.footer a {
+    color: var(--tertiary-color);
+    transition: color var(--transition-speed);
+}
+
+.footer a:hover {
+    color: var(--primary-color);
+}
+
+.footer h5 {
+    font-weight: bold;
+}
+
+.footer .bi {
+    font-size: 1.5rem;
+    transition: color var(--transition-speed);
+}
+
+.footer .bi:hover {
+    color: var(--primary-color);
+}
+
