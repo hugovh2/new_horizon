@@ -10,16 +10,9 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    /* background-color: var(--tertiary-color); */
-    /* font-family: 'Roboto', sans-serif; */
     background-color: #f0f2f5;
     color: #333;
 
-}
-/* inicio navbar */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
 }
 
 /* Navbar */
@@ -101,6 +94,7 @@ body {
     background-color: #333;
     border-color: #333;
 }
+
 /* fim navbar */
 
 
@@ -480,7 +474,8 @@ body {
     opacity: 1;
 }
 
-.card-title, .card-text {
+.card-title,
+.card-text {
     margin: 0;
     text-align: center;
 }
@@ -569,3 +564,137 @@ body {
     color: var(--primary-color);
 }
 
+/* /////////////// imagem de texto como apresentação ////////////////////// */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.title {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.text {
+    flex: 1;
+    font-size: 1em;
+    line-height: 1.5em;
+    text-align: left;
+}
+
+.text h3 {
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.text p {
+    margin-top: 10px;
+    display: none;
+}
+
+.screenshot {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.screenshot img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.collab-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.collab-chat-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.collab-chat-bubble {
+    display: flex;
+    align-items: center;
+}
+
+.collab-profile-pic {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.collab-bubble {
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    position: relative;
+}
+
+.collab-bubble:before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 15px;
+    width: 20px;
+    height: 20px;
+    background-color: inherit;
+    border-radius: 50%;
+}
+
+.collab-text-section {
+    max-width: 50%;
+}
+
+.collab-text-section h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.collab-text-section p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.collab-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.collab-link:hover {
+    text-decoration: underline;
+}
+
+#teste {
+    color: #333;
+    text-align: center;
+}
+
+.centered-text {
+    text-align: center;
+}

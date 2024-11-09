@@ -13,7 +13,8 @@ body {
     justify-content: space-between;
     padding: 25px 25px;
     background-color: #f7f6f4;
-    border-bottom: 1px solid #ddd;
+    /* border-bottom: 1px solid #ddd; */
+    border-bottom: 1px solid #111111;
 }
 
 /* Logo */
@@ -76,15 +77,14 @@ body {
 
 .navbar-buttons .button-start {
     color: #fff;
-    background-color: #28a745;
-    border: 1px solid #28a745;
+    background-color: #333;
+    border: 1px solid #333;
 }
 
 .navbar-buttons .button-start:hover {
-    background-color: #218838;
-    border-color: #218838;
+    background-color: #333;
+    border-color: #333;
 }
-
 /* fim navbar */
 
 .card {
@@ -335,4 +335,74 @@ footer {
     width: 100%;
     height: auto;
     border-radius: 8px;
+}
+
+/* Estilos específicos para o contêiner .site-builder */
+.site-builder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #f5f5f5;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Título */
+.site-builder .title {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.site-builder .subtitle {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Botões de seleção */
+.site-builder .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.site-builder .buttons button {
+    font-size: 1em;
+    padding: 12px 24px;
+    border: 2px solid #333;
+    background: transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.site-builder .buttons button:hover {
+    background: #333;
+    color: #fff;
+}
+
+/* Botão principal */
+.site-builder .start-button {
+    font-size: 1.2em;
+    padding: 14px 28px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.site-builder .start-button:hover {
+    background-color: #0056b3;
 }

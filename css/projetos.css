@@ -1,0 +1,158 @@
+.projetos-container {
+  max-width: 1200px;
+  padding: 120px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  position: relative;
+}
+
+.projetos-container::before {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url(../assets/icones/deco.svg) no-repeat center center;
+  position: absolute;
+  top: -50px;
+  left: 20px;
+}
+
+.projetos-lista {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 60px 60px 120px 60px;
+  overflow-y: hidden;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  scroll-snap-type: x mandatory;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  /* Cor de fundo da trilha */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(112, 218, 28, 0.9);
+  /* Cor do polegar */
+  border-radius: 8px;
+  /* Borda arredondada do polegar */
+}
+
+.projetos-texto {
+  margin-bottom: 60px;
+  max-width: 45ch;
+}
+
+.projeto-titulo {
+  padding-bottom: 20px;
+}
+
+.projetos .titulo-secao {
+  color: #000;
+  max-width: 5ch;
+}
+
+.projeto-tipo {
+  color: #a3a3a3;
+  padding-bottom: 5px;
+}
+
+.projeto {
+  flex-basis: 260px;
+  flex-shrink: 0;
+  background: #000;
+  padding: 40px 40px 10px 40px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.projeto:hover {
+  box-shadow: 0px 0px 30px 1px rgba(112, 218, 28, 0.9);
+  transform: scale(0.98);
+}
+
+.projeto>img {
+  height: 140px;
+}
+
+.tecnologias {
+  margin: 20px 0;
+}
+
+.tecnologias-icones {
+  display: flex;
+  margin: 0 auto;
+  gap: 5px;
+}
+
+.projetos-button {
+  padding-top: 10px;
+  margin: 0 auto;
+}
+
+.projetos-button:hover {
+  cursor: pointer;
+}
+
+.projetos-descricao {
+  margin-top: 40px;
+}
+
+.projetos-descricao .btn {
+  margin-top: 20px;
+  width: 100px;
+}
+
+.projetos-descricao .btn:hover {
+  cursor: pointer;
+}
+
+.projetos-descricao {
+  height: 0px;
+  visibility: hidden;
+}
+
+.active {
+  height: auto;
+  visibility: visible;
+}
+
+.image-p:hover {
+  filter: brightness(110%);
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: filter 0.3s, cursor 0.3s;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .projetos-container {
+    grid-template-columns: 1fr;
+  }
+
+  .projetos .titulo-secao {
+    color: #fff;
+  }
+
+  .projeto {
+    display: grid;
+    padding: 40px 70px 10px 70px;
+    border-radius: 4px;
+    grid-template-columns: 200px;
+  }
+
+  .projeto>img {
+    height: 140px;
+    width: 220px;
+  }
+
+  .projetos-texto {
+    max-width: auto;
+  }
+}

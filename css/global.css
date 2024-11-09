@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap");
+a,
+li,
+ul,
+ol,
+button {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Fira Sans", "Arial", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+body {
+  margin: 0%;
+  padding: 0%;
+}
+/* Tipografia */
+h1,
+h2,
+h3 {
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-weight: bold;
+  margin: 0%;
+}
+h1 {
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 80px;
+}
+span {
+  font-family: "Fira Sans", "Arial", sans-serif;
+}
+.titulo-secao {
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 140px;
+  margin: 0px;
+  line-height: 144px;
+  text-transform: uppercase;
+  word-break: break-all;
+  max-width: 4ch;
+}
+h3 {
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.texto-p {
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+.texto-g {
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+}
+.span-dot {
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 34px;
+  background: -webkit-linear-gradient(180deg, #b6f829 0%, #67dd0a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media (max-width: 800px) {
+  .titulo-secao {
+    font-size: 3rem;
+    line-height: 44px;
+    text-transform: capitalize;
+    max-width: initial !important;
+  }
+}
+
+/* Cores */
+.c1 {
+  color: #f5f5f5;
+}
+.c2 {
+  color: #f0f0f0;
+}
+.c3 {
+  color: #e0e0e0;
+}
+.c4 {
+  color: #cccccc;
+}
+.c5 {
+  color: #b8b8b8;
+}
+.c6 {
+  color: #a3a3a3;
+}
+.c7 {
+  color: #8f8f8f;
+}
+.c8 {
+  color: #7a7a7a;
+}
+.c9 {
+  color: #666666;
+}
+.c10 {
+  color: #525252;
+}
+.c11 {
+  color: #3d3d3d;
+}
+.c12 {
+  color: #292929;
+}
+.c13 {
+  color: #141414;
+}
+/* background */
+.c1-bg {
+  background-color: #f5f5f5;
+}
+.c2-bg {
+  background-color: #f0f0f0;
+}
+.c3-bg {
+  background-color: #e0e0e0;
+}
+.c4-bg {
+  background-color: #cccccc;
+}
+.c5-bg {
+  background-color: #b8b8b8;
+}
+.c6-bg {
+  background-color: #a3a3a3;
+}
+.c7-bg {
+  background-color: #8f8f8f;
+}
+.c8-bg {
+  background-color: #7a7a7a;
+}
+.c9-bg {
+  background-color: #666666;
+}
+.c10-bg {
+  background-color: #525252;
+}
+.c11-bg {
+  background-color: #3d3d3d;
+}
+.c12-bg {
+  background-color: #292929;
+}
+.c13-bg {
+  background-color: #141414;
+  color: #fff;
+}
+.gradient {
+  background: linear-gradient(180deg, #b6f829 0%, #67dd0a 100%);
+}

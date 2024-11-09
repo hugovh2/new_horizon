@@ -93,3 +93,10 @@
 
  // Iniciar o carrossel de depoimentos automaticamente
  startAutoSlide();
+
+
+
+ function toggleText(sectionId) {
+    const textElement = document.getElementById(sectionId);
+    textElement.style.display = textElement.style.display === "block" ? "none" : "block";
+}
